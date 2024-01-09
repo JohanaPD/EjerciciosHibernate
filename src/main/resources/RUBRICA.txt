@@ -1,0 +1,27 @@
+RUBRICA
+=============================================================
+5.5. Instalación y configuración.
+Consulta el apéndice F: Instalación y configuración de Hibernate.
+Ejercicios 5.1
+Si lo necesitas puedes consultar la documentación de la API de Hibernate.
+En los siguientes ejercicios debes asegurarte de que los cambios hayan sido aplicados
+a la BdD.
+Debes copiar la o las consultas SQL que se generen en un archivo txt para mostrarlo si
+te toca corregir.
+1. Crea un proyecto con Hibernate que te permita insertar una nueva localización en
+la BdD (el pueblo donde vivas) y añade a ella 3 departamentos que te inventes.
+2. Inserta 5 empleados nuevos asociados al departamento creado en el ejercicio
+5.1.1
+3. Modifica el empleado 301 para que cobre un 5 % más. También cambia el departamento 20 a la localización 4000. En ambos casos debes asegurarte de que
+existan.
+Página 172 Creative Commons 4.0 c b n a
+Acceso a Datos Sergio Cuesta Vicente
+4. Elimina el departamento ”Ventas”. ¿Puedes? ¿por qué? ¿cómo puedes ajustar
+tu programa para que tenga en cuenta estas situaciones? Prueba a eliminar el
+departamento 80.
+5. Crea un método para cargar objetos de tipo empleado que reciba su id como
+argumento. Los cargará usando get() para comprobar que existan. Un vez los
+tenga, debe cargar también su departamento pero usaremos load() ya que sabemos que existe.
+6. Modifica el ejercicio 5.1.5 para que se creen dos almacenes (por ejemplo con
+ArrayList): uno de empleados y otro de departamentos. Antes de cargar el departamento desde la BdD en el objeto empleado, comprueba que si ya está en
+el almacén.

@@ -1,0 +1,7 @@
+  String hql = "DELETE FROM DepartamentosEntity WHERE nombreDepartamento= :name";
+  String consultation = "FROM EmpleadosEntity";
+
+  No se puede elimminar al tener relación con otras tablas, revisar las relaciones :
+  Foreign Key Constraint 'departamentos_fk2' on table 'departamentos' column 'id_director' references table 'empleados' column 'id_empleado'
+  Foreign Key Constraint 'departamentos_fk1' on table 'departamentos' column 'id_localizacion' references table 'localizaciones' column 'id_localizacion'
+  Departamento Eliminado ?  false
